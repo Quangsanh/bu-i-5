@@ -1,0 +1,58 @@
+ *{
+    font-family: sans-serif;
+ }
+.backgrimage{
+    width: 600px;
+    height: 400px;
+    position:relative;
+    background-image: url('https://phongkhongkhongquan.vn/Images/image/THang%209-2016/NguyenBinhVTV-145504055523-Alicante_Spain.jpg');
+    background-size: cover;
+}
+
+
+.para{
+    position: relative;
+    text-align: center;
+    font-weight: 100;
+   
+    top:250px;
+    transition:all .5s linear;
+    z-index: 1;
+}
+.tiltle{
+    text-align: center;
+     position:relative;
+     top:200px;
+     font-weight: 500;
+     transition: all .5s linear;
+     z-index: 1;
+}
+span{font-weight: 1000;
+
+}
+.backgrimage:hover .tiltle{
+    color:white;
+    top: 150px;
+    opacity:0;
+
+}
+.backgrimage:hover .para{
+    color:white;
+    top :230px;
+
+}
+.backgrimage::after{
+    opacity:0;
+    top:0;
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, transparent , rgb(248, 195, 195));
+    transition: all .3s linear;
+}
+.backgrimage:hover::after{
+    opacity:100%;
+
+}
+
